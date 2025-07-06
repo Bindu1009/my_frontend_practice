@@ -1,0 +1,149 @@
+body {
+    font-family: 'Georgia', serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f5e6d3; /*background color */
+    color: #4a3a2a; /* Dark brown text */
+    line-height: 1.6;
+    display: flex; /* Use flexbox for overall layout */
+    flex-direction: column; /* Stack header, container, footer vertically */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #a96e45; /* SaddleBrown - deep coffee brown */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav li {
+    margin: 0 20px;
+}
+
+.main-nav a {
+    color: #fff; /* White text for navigation links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: #69340f; /* Darker brown on hover */
+}
+
+/* Main Content Container Styles */
+.container {
+    flex-grow: 1; /* Allows container to take up available space */
+    background-color: #fffaf0; /* FloralWhite - slightly off-white for content */
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limit content width */
+    width: 90%;
+    margin: 30px auto; /* Center the container with top/bottom margin */
+    text-align: center;
+}
+
+h1 {
+    color: #5C4033; /* Darker coffee brown for heading */
+    font-size: 3.5em; /* Large, inviting heading */
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Slightly rounded corners for the image */
+    margin: 25px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form Section Styles */
+.order-form-section {
+    background-color: #ffe4b5; /* Moccasin - a warm, light orange for the form section */
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-form-section h2 {
+    color: #8B4513; /* SaddleBrown for form heading */
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.order-form-section p {
+    font-size: 1em;
+    color: #5C4033;
+    margin-bottom: 20px;
+}
+
+.order-form label {
+    display: block; /* Make label appear on its own line */
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #5C4033;
+}
+
+.order-form input[type="text"] {
+    width: calc(100% - 20px); /* Adjust width for padding */
+    padding: 12px 10px;
+    margin-bottom: 20px;
+    border: 2px solid #d2b48c; /* Tan border */
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: #4a3a2a;
+}
+
+.order-form input[type="text"]::placeholder {
+    color: #a08c78; /* Lighter placeholder text */
+}
+
+.order-form button[type="submit"] {
+    background-color: #A0522D; /* Sienna - a rich earthy brown */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.order-form button[type="submit"]:hover {
+    background-color: #8B4513; /* Darker brown on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes footer to the bottom */
+    font-size: 0.9em;
+}
